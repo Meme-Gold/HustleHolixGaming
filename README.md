@@ -33,7 +33,7 @@ Full roadmap on the website!
 ## Official Links
 
 - 🎥 **Twitch:** [twitch.tv/h2gx_562](https://twitch.tv/h2gx_562)  
-- 💬 **Discord:** [discord.gg/KGQrMyPP6v](https://discord.gg/KGQrMyPP6v)  
+- 💬 **Discord:** [discord.gg/KGQrMyPP6v](https://discord.gg/9PAQja9c)  
 - 📺 **YouTube:** [youtube.com/@HustleHolixGamingENT](https://www.youtube.com/@HustleHolixGamingENT)  
 - 📘 **Facebook:** [facebook.com/hustleholixgaming](https://www.facebook.com/hustleholixgaming/)  
 - 🎵 **TikTok:** [tiktok.com/@hustle.holix.gaming](https://www.tiktok.com/@hustle.holix.gaming)  
