@@ -18,7 +18,8 @@
             content: "";
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
+            background: rgba(0, 0, 0, 0.5); /* Lighter overlay — background stands out more */
+            backdrop-filter: blur(3px); /* Subtle blur for depth */
             z-index: 1;
         }
         header, .section, footer { position: relative; z-index: 2; }
@@ -40,7 +41,13 @@
         h1 { font-size: 3.5em; margin: 30px; text-shadow: 0 0 20px gold; }
         p { font-size: 1.6em; max-width: 900px; margin: 20px auto; text-shadow: 0 0 10px #000; }
         
-        .section { padding: 60px 50px; background: rgba(0, 0, 0, 0.5); margin: 20px; border-radius: 20px; box-shadow: 0 0 30px rgba(255, 215, 0, 0.4); }
+        .section { 
+            padding: 60px 50px; 
+            background: rgba(0, 0, 0, 0.4); 
+            margin: 20px; 
+            border-radius: 20px; 
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.4), inset 0 0 20px rgba(255, 215, 0, 0.2); 
+        }
         
         .social-buttons {
             display: flex;
@@ -74,11 +81,11 @@
             }
         }
         
-        .roadmap { background: rgba(17, 17, 17, 0.7); }
+        .roadmap { background: rgba(17, 17, 17, 0.6); }
         .phase { 
             margin: 50px auto; 
             max-width: 900px; 
-            background: rgba(34, 34, 34, 0.8); 
+            background: rgba(34, 34, 34, 0.7); 
             padding: 30px; 
             border-radius: 20px; 
             border: 3px solid gold; 
