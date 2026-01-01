@@ -2,7 +2,7 @@
 
 ![$HHG Logo](logo.png)
 
-**Live Website:** [https://yourusername.github.io/your-repo-name/](https://meme-gold.github.io/HustleHolixGaming/)  
+**Live Website:** (https://meme-gold.github.io/HustleHolixGaming/)  
 
 ## About This Project
 
