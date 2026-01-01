@@ -8,84 +8,93 @@
         body { 
             margin: 0; 
             font-family: Arial, sans-serif; 
-            background: #000 url('https://png.pngtree.com/background/20250104/original/pngtree-neon-glowing-video-game-controllers-on-a-black-background-picture-image_15972054.jpg') no-repeat center center fixed; 
-            background-size: cover; 
             color: #fff; 
             text-align: center; 
             position: relative;
+            overflow: hidden;
+            height: 100vh;
         }
-        body::before {
-            content: "";
+        #bg-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            object-fit: cover;
+        }
+        .overlay {
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0, 0, 0, 0.65); /* Dark overlay for readability */
+            background: rgba(0, 0, 0, 0.7); /* Dark overlay so text pops */
             z-index: 1;
         }
         header, .section, footer { position: relative; z-index: 2; }
         
-        header { padding: 80px 50px; background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(5px); }
+        header { padding: 80px 50px; background: rgba(0, 0, 0, 0.3); backdrop-filter: blur(5px); }
         img.logo { 
             width: 320px; 
             max-width: 90%; 
             border-radius: 50%; 
             border: 6px solid gold; 
-            box-shadow: 0 0 30px gold, 0 0 60px rgba(255, 215, 0, 0.6); 
+            box-shadow: 0 0 40px gold; 
             animation: pulse 4s infinite; 
         }
         @keyframes pulse {
-            0% { box-shadow: 0 0 30px gold, 0 0 60px rgba(255, 215, 0, 0.6); }
-            50% { box-shadow: 0 0 50px gold, 0 0 100px rgba(255, 215, 0, 0.8); }
-            100% { box-shadow: 0 0 30px gold, 0 0 60px rgba(255, 215, 0, 0.6); }
+            0% { box-shadow: 0 0 40px gold; }
+            50% { box-shadow: 0 0 70px gold; }
+            100% { box-shadow: 0 0 40px gold; }
         }
         h1 { font-size: 3.5em; margin: 30px; text-shadow: 0 0 20px gold; }
         p { font-size: 1.6em; max-width: 900px; margin: 20px auto; text-shadow: 0 0 10px #000; }
         
-        .section { padding: 60px 50px; background: rgba(0, 0, 0, 0.5); margin: 20px; border-radius: 20px; border: 2px solid transparent; box-shadow: 0 0 20px rgba(255, 215, 0, 0.3); }
+        .section { padding: 60px 50px; background: rgba(0, 0, 0, 0.5); margin: 20px; border-radius: 20px; box-shadow: 0 0 30px rgba(255, 215, 0, 0.4); }
         
         .btn { 
-            display: inline-block; 
             padding: 18px 35px; 
-            background: linear-gradient(45deg, #000, #111); 
+            background: linear-gradient(45deg, #111, #000); 
             color: gold; 
             font-weight: bold; 
-            text-decoration: none; 
             border-radius: 15px; 
             margin: 20px; 
             font-size: 1.3em; 
             border: 3px solid gold; 
-            box-shadow: 0 0 20px rgba(255, 215, 0, 0.8); 
-            transition: all 0.3s;
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.8); 
+            transition: 0.3s;
         }
-        .btn:hover { transform: scale(1.1); box-shadow: 0 0 40px gold; }
+        .btn:hover { transform: scale(1.1); box-shadow: 0 0 50px gold; }
         
         .roadmap { background: rgba(17, 17, 17, 0.7); }
         .phase { 
             margin: 50px auto; 
             max-width: 900px; 
-            text-align: left; 
             background: rgba(34, 34, 34, 0.8); 
             padding: 30px; 
             border-radius: 20px; 
             border: 3px solid gold; 
-            box-shadow: 0 0 30px rgba(255, 215, 0, 0.5); 
+            box-shadow: 0 0 40px rgba(255, 215, 0, 0.5); 
         }
-        .phase h3 { text-align: center; font-size: 2em; text-shadow: 0 0 15px gold; }
-        .current { 
-            border: 5px solid #00ff00; 
-            box-shadow: 0 0 50px #00ff00, 0 0 80px rgba(0, 255, 0, 0.6); 
-            animation: greenpulse 3s infinite; 
-        }
+        .current { border: 5px solid #00ff00; box-shadow: 0 0 60px #00ff00; animation: greenpulse 3s infinite; }
         @keyframes greenpulse {
-            0% { box-shadow: 0 0 50px #00ff00, 0 0 80px rgba(0, 255, 0, 0.6); }
-            50% { box-shadow: 0 0 70px #00ff00, 0 0 120px rgba(0, 255, 0, 0.8); }
-            100% { box-shadow: 0 0 50px #00ff00, 0 0 80px rgba(0, 255, 0, 0.6); }
+            0% { box-shadow: 0 0 60px #00ff00; }
+            50% { box-shadow: 0 0 90px #00ff00; }
+            100% { box-shadow: 0 0 60px #00ff00; }
         }
         
-        footer { padding: 40px; background: rgba(17, 17, 17, 0.8); text-shadow: 0 0 10px gold; }
-        a { color: gold; }
+        footer { padding: 40px; background: rgba(17, 17, 17, 0.8); }
     </style>
 </head>
 <body>
+    <!-- MP4 Background Video -->
+    <video id="bg-video" autoplay muted loop playsinline>
+        <source src="./background.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+    <div class="overlay"></div>
+
+    <!-- Content -->
     <header>
         <img src="./logo.png" alt="$HHG Logo" class="logo">
         <h1>$HHG - Hustle Holix Gaming Meme Coin</h1>
@@ -94,7 +103,6 @@
         No rush. No fake hype. Slow and steady wins. Trust the doctor – we're prescribing moons together. 🚀</p>
     </header>
 
-    <!-- Rest of your sections stay the same -->
     <div class="section">
         <h2>Join the Early Grind</h2>
         <p>We're keeping it tiny and real at first.<br>
@@ -107,7 +115,6 @@
         <a href="https://www.instagram.com/hustleholixgaming/" class="btn">Follow on Instagram</a>
     </div>
 
-    <!-- Roadmap section unchanged except for class styles above -->
     <div class="section roadmap">
         <h2>2+ Year Realistic Roadmap</h2>
         
@@ -124,7 +131,6 @@
             </ul>
         </div>
         
-        <!-- Other phases same as before -->
         <div class="phase">
             <h3>Phase 2: Getting Comfortable (Jul–Dec 2026)</h3>
             <ul><li>15–25 average viewers</li><li>100–300 community members</li><li>Improve overlays, alerts, schedule</li><li>Small personal giveaways</li><li>Grow the OG list</li></ul>
