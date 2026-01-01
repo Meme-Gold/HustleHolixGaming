@@ -3,32 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$HHG - Hustle Holix Gaming</title>
+    <title>$HHG - Hustle Holix Gaming Meme Coin</title>
     <style>
         body { 
             margin: 0; 
             font-family: Arial, sans-serif; 
+            background: #000 url('./bg.jpg') no-repeat center center fixed; 
+            background-size: cover; 
             color: #fff; 
             text-align: center; 
             position: relative;
-            overflow: hidden;
-            height: 100vh;
         }
-        #bg-video {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: -1;
-            object-fit: cover;
-        }
-        .overlay {
+        body::before {
+            content: "";
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0, 0, 0, 0.7); /* Dark overlay so text pops */
+            background: rgba(0, 0, 0, 0.7); /* Dark overlay for text readability */
             z-index: 1;
         }
         header, .section, footer { position: relative; z-index: 2; }
@@ -87,14 +77,8 @@
     </style>
 </head>
 <body>
-    <!-- MP4 Background Video -->
-    <video id="bg-video" autoplay muted loop playsinline>
-        <source src="./background.mp4" type="video/mp4">
-        Your browser does not support video.
-    </video>
-    <div class="overlay"></div>
+    <!-- No MP4 video anymore — static background only -->
 
-    <!-- Content -->
     <header>
         <img src="./logo.png" alt="$HHG Logo" class="logo">
         <h1>$HHG - Hustle Holix Gaming Meme Coin</h1>
