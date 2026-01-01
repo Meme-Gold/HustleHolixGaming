@@ -6,8 +6,8 @@
 
 ## About This Project
 
-Hey! I'm **Hustle Holix Gaming** 🩺🎮  
-New streamer starting fresh on Twitch in January 2026: **twitch.tv/h2gx_562**
+Hey! I'm **Coach Art of Hustle Holix Gaming** 🩺🎮  
+New streamer starting fresh on Twitch: **twitch.tv/h2gx_562**
 
 This website is the future home of **$HHG** — a meme coin I plan to launch **in 2028**, but **only after building a real, loyal community first**.
 
@@ -20,8 +20,8 @@ Trust the doctor. We're building this the right way: **slow and steady** 🚀
 
 ## 2+ Year Realistic Roadmap
 
-- **Phase 1 (Jan–Jun 2026):** Baby steps — 5–10 avg viewers, small Discord, first 20–50 OGs  
-- **Phase 2 (Jul–Dec 2026):** 15–25 viewers, 100–300 community members  
+- **Phase 1 (Jan–Jun 2026):** Baby steps — 15-30 avg viewers, small Discord, first 20–50 OGs  
+- **Phase 2 (Jul–Dec 2026):** 30-60 viewers, 100–300 community members  
 - **Phase 3 (Jan–Jun 2027):** Build momentum, meme contests, casual tokenomics talks  
 - **Phase 4 (Jul–Dec 2027):** Prep for launch, finalize plans with community input  
 - **Phase 5 (Early–Mid 2028):** Fair $HHG launch on Solana + huge OG airdrops  
@@ -46,7 +46,7 @@ Full roadmap on the website!
 - Follow on any platform — every early supporter counts  
 - Help spread the word to chill gamers who vibe with the energy  
 
-The crew starting in 2026 will run this in 2028.
+The crew starting in 2026 will run this in 2028 and beyond.
 
 Thanks for being part of the beginning.  
 See you in the streams 🩺🎮
