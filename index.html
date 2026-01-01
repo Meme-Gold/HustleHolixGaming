@@ -18,7 +18,7 @@
             content: "";
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0, 0, 0, 0.5); /* Lighter overlay — background stands out more */
+            background: rgba(0, 0, 0, 0.2); /* Super light overlay — background stands out max */
             backdrop-filter: blur(3px); /* Subtle blur for depth */
             z-index: 1;
         }
@@ -29,16 +29,16 @@
             width: 320px; 
             max-width: 90%; 
             border-radius: 50%; 
-            border: 6px solid gold; 
-            box-shadow: 0 0 40px gold; 
+            border: 6px solid #00ffff; /* Neon blue border */
+            box-shadow: 0 0 40px #00ffff; 
             animation: pulse 4s infinite; 
         }
         @keyframes pulse {
-            0% { box-shadow: 0 0 40px gold; }
-            50% { box-shadow: 0 0 70px gold; }
-            100% { box-shadow: 0 0 40px gold; }
+            0% { box-shadow: 0 0 40px #00ffff; }
+            50% { box-shadow: 0 0 70px #00ffff; }
+            100% { box-shadow: 0 0 40px #00ffff; }
         }
-        h1 { font-size: 3.5em; margin: 30px; text-shadow: 0 0 20px gold; }
+        h1 { font-size: 3.5em; margin: 30px; text-shadow: 0 0 20px #00ffff; }
         p { font-size: 1.6em; max-width: 900px; margin: 20px auto; text-shadow: 0 0 10px #000; }
         
         .section { 
@@ -46,7 +46,7 @@
             background: rgba(0, 0, 0, 0.4); 
             margin: 20px; 
             border-radius: 20px; 
-            box-shadow: 0 0 30px rgba(255, 215, 0, 0.4), inset 0 0 20px rgba(255, 215, 0, 0.2); 
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.4), inset 0 0 20px rgba(0, 255, 255, 0.2); /* Neon blue glow */
         }
         
         .social-buttons {
@@ -58,20 +58,20 @@
         }
         .btn { 
             padding: 14px 28px; 
-            background: linear-gradient(45deg, #111, #000); 
-            color: gold; 
+            background: linear-gradient(45deg, #001122, #000); 
+            color: #00ffff; /* Neon blue text */
             font-weight: bold; 
             border-radius: 15px; 
             font-size: 1.2em; 
             min-width: 220px;
-            border: 3px solid gold; 
-            box-shadow: 0 0 25px rgba(255, 215, 0, 0.8); 
+            border: 3px solid #00ffff; /* Neon blue border */
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.8); 
             transition: 0.3s;
             text-decoration: none;
         }
         .btn:hover { 
             transform: scale(1.1); 
-            box-shadow: 0 0 50px gold; 
+            box-shadow: 0 0 50px #00ffff; 
         }
         @media (max-width: 768px) {
             .btn { 
@@ -88,11 +88,11 @@
             background: rgba(34, 34, 34, 0.7); 
             padding: 30px; 
             border-radius: 20px; 
-            border: 3px solid gold; 
-            box-shadow: 0 0 40px rgba(255, 215, 0, 0.5); 
+            border: 3px solid #00ffff; /* Neon blue */
+            box-shadow: 0 0 40px rgba(0, 255, 255, 0.5); 
         }
         .current { 
-            border: 5px solid #00ff00; 
+            border: 5px solid #00ff00; /* Keep green for current phase highlight */
             box-shadow: 0 0 60px #00ff00; 
             animation: greenpulse 3s infinite; 
         }
